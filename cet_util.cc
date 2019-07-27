@@ -44,8 +44,27 @@ static int cet_output = 0;
 /* %%% fixed inbuild character sets %%% */
 
 #include "cet/ansi_x3_4_1968.h"
+#include "cet/cp1250.h"
+#include "cet/cp1251.h"
 #include "cet/cp1252.h"
+#include "cet/cp1253.h"
+#include "cet/cp1254.h"
+#include "cet/cp1255.h"
+#include "cet/cp1256.h"
+#include "cet/cp1257.h"
+#include "cet/iso_8859_1.h"
+#include "cet/iso_8859_2.h"
+#include "cet/iso_8859_3.h"
+#include "cet/iso_8859_4.h"
+#include "cet/iso_8859_5.h"
+#include "cet/iso_8859_6.h"
+#include "cet/iso_8859_7.h"
 #include "cet/iso_8859_8.h"
+#include "cet/iso_8859_9.h"
+#include "cet/iso_8859_10.h"
+#include "cet/iso_8859_13.h"
+#include "cet/iso_8859_14.h"
+#include "cet/iso_8859_15.h"
 
 
 /* %%% short hand strings transmission for main character sets %%% */
@@ -133,13 +152,69 @@ cet_register()
 #ifdef cet_cs_name_ansi_x3_4_1968
   cet_register_cs(&cet_cs_vec_ansi_x3_4_1968);
 #endif
+#ifdef cet_cs_name_cp1250
+  cet_register_cs(&cet_cs_vec_cp1250);
+#endif
+#ifdef cet_cs_name_cp1251
+  cet_register_cs(&cet_cs_vec_cp1251);
+#endif
 #ifdef cet_cs_name_cp1252
   cet_register_cs(&cet_cs_vec_cp1252);
+#endif
+#ifdef cet_cs_name_cp1253
+  cet_register_cs(&cet_cs_vec_cp1253);
+#endif
+#ifdef cet_cs_name_cp1254
+  cet_register_cs(&cet_cs_vec_cp1254);
+#endif
+#ifdef cet_cs_name_cp1255
+  cet_register_cs(&cet_cs_vec_cp1255);
+#endif
+#ifdef cet_cs_name_cp1256
+  cet_register_cs(&cet_cs_vec_cp1256);
+#endif
+#ifdef cet_cs_name_cp1257
+  cet_register_cs(&cet_cs_vec_cp1257);
+#endif
+#ifdef cet_cs_name_iso_8859_1
+  cet_register_cs(&cet_cs_vec_iso_8859_1);
+#endif
+#ifdef cet_cs_name_iso_8859_2
+  cet_register_cs(&cet_cs_vec_iso_8859_2);
+#endif
+#ifdef cet_cs_name_iso_8859_3
+  cet_register_cs(&cet_cs_vec_iso_8859_3);
+#endif
+#ifdef cet_cs_name_iso_8859_4
+  cet_register_cs(&cet_cs_vec_iso_8859_4);
+#endif
+#ifdef cet_cs_name_iso_8859_5
+  cet_register_cs(&cet_cs_vec_iso_8859_5);
+#endif
+#ifdef cet_cs_name_iso_8859_6
+  cet_register_cs(&cet_cs_vec_iso_8859_6);
+#endif
+#ifdef cet_cs_name_iso_8859_7
+  cet_register_cs(&cet_cs_vec_iso_8859_7);
 #endif
 #ifdef cet_cs_name_iso_8859_8
   cet_register_cs(&cet_cs_vec_iso_8859_8);
 #endif
-
+#ifdef cet_cs_name_iso_8859_9
+  cet_register_cs(&cet_cs_vec_iso_8859_9);
+#endif
+#ifdef cet_cs_name_iso_8859_10
+  cet_register_cs(&cet_cs_vec_iso_8859_10);
+#endif
+#ifdef cet_cs_name_iso_8859_13
+  cet_register_cs(&cet_cs_vec_iso_8859_13);
+#endif
+#ifdef cet_cs_name_iso_8859_14
+  cet_register_cs(&cet_cs_vec_iso_8859_14);
+#endif
+#ifdef cet_cs_name_iso_8859_15
+  cet_register_cs(&cet_cs_vec_iso_8859_15);
+#endif
 
   if (cet_cs_vec_ct > 0) {
     cet_cs_vec_t* p;
